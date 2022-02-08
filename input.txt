@@ -1,0 +1,4 @@
+{"type": "add", "payload": {"a": 1, "b": 2}}
+{"type": "add", "payload": {"a": -.123, "b": -101.01}}
+{"type": "subtract", "payload": {"a": 1, "b": 2}}
+{"type": "subtract", "payload": {"a": -.123, "b": -101.01}}

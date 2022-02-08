@@ -1,0 +1,4 @@
+{ "type": "sum", "payload":3.000000}
+{ "type": "sum", "payload":-101.133000}
+{ "type": "difference", "payload":-1.000000}
+{ "type": "difference", "payload":100.887000}
