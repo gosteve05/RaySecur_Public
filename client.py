@@ -4,7 +4,12 @@ import json
 ws = create_connection("ws://localhost:9002/websocket")
 result = "nonempty"
 while(result != ""):
-    ws.send("Message")
+    send_type = "subtract"
+    a = 5.2
+    b = -7
+    message = "{\"type\": \"" + send_type + "\", \"payload\": {\"a\": " + str(a) + ", \"b\": " + str(b) + "}}"
+    #"type": "add", "payload": {"a": 1, "b": 2}}
+    ws.send(message)
     result = ws.recv()
     received = json.loads(result)
     type_received = received["type"]
